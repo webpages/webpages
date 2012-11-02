@@ -9,4 +9,4 @@ Main features:
  - extansible
  - pluggable applications
 
-Look at project structure: 
+Look at [project diagram](https://raw.github.com/1st/rapidpy/master/rapidpy_framework_diagram.png)
