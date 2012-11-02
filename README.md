@@ -1,4 +1,12 @@
-rapidpy
+RapidPy - Python web framework
 =======
 
-RapidPy - Rapid application development with Python
+Main features:
+ - rapid web application development with Python
+ - easy to understand and minimalistical code style
+ - configuration inheritance
+ - fast and memory efficient
+ - extansible
+ - pluggable applications
+
+Look at project structure: 
