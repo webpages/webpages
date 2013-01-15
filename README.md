@@ -43,8 +43,12 @@ The **Page** - is a representation of real web page, that show something and han
         # handle user request to modify something and redirect to result page
         # where we can show appropriate message
 
+We can modify page behaviour with subclassing one Page to build another, with similar things. For example, we can create general page behaviour and use it in multiple pages that subclass this one.
+
 
 Project diagrams
 --------
+
+*(this is onl diagram for my old idea, and I will delete this soon)*
 
 ![Project diagram](https://raw.github.com/1st/webpages/master/rapidpy_framework_diagram.png "Project diagram")
