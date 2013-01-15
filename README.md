@@ -1,4 +1,4 @@
-WebPages - incredibly **new** python web framework
+WebPages - incredibly ***new*** python web framework
 =======
 
 I think, that most of web frameworks was inspired by Ruby on Rails approach.
