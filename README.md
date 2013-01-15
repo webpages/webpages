@@ -5,6 +5,7 @@ I think, that most of web frameworks was inspired by Ruby on Rails approach.
 I like RoR, Django, Cake PHP - these are good projects.
 I have a new idea how to do programming more easy.
 
+
 Foreword
 --------
 I was thinking about how to teach my nephew to create web applications. The boy had 14 years old, and his was't learned programming before.
@@ -22,6 +23,10 @@ My goal was to tell about how to write web applications on python. But I was fou
   - add new app to **INSTALLED_APPS** in settings.py
  - what is html, css, java srcipt
 
+
+Idea
+--------
+
 Main features:
  - rapid web application development with Python
  - easy to understand and minimalistical code style
@@ -30,4 +35,4 @@ Main features:
  - extansible
  - pluggable applications
 
-Look at [project diagram](https://raw.github.com/1st/rapidpy/master/rapidpy_framework_diagram.png)
+![Project diagram](https://raw.github.com/1st/webpages/master/rapidpy_framework_diagram.png "Project diagram")
