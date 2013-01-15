@@ -54,6 +54,6 @@ Page can be build from parts. This parts are standart set of classes, designed t
 Project diagrams
 --------
 
-*(this is onl diagram for my old idea, and I will delete this soon)*
+*(this is old diagram for my old idea, and I will delete this soon)*
 
 ![Project diagram](https://raw.github.com/1st/webpages/master/rapidpy_framework_diagram.png "Project diagram")
