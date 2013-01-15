@@ -1,4 +1,4 @@
-WebPages - incredibly NEW python web framework
+WebPages - incredibly **new** python web framework
 =======
 
 I think, that most of web frameworks was inspired by Ruby on Rails approach.
@@ -8,6 +8,7 @@ I have a new idea how to do programming more easy.
 
 Foreword
 --------
+
 I was thinking about how to teach my nephew to create web applications. The boy had 14 years old, and his was't learned programming before.
 
 My goal was to tell about how to write web applications on python. But I was found that I need to tell a lot of basic information about:
@@ -27,12 +28,10 @@ My goal was to tell about how to write web applications on python. But I was fou
 Idea
 --------
 
-Main features:
- - rapid web application development with Python
- - easy to understand and minimalistical code style
- - configuration inheritance
- - fast and memory efficient
- - extansible
- - pluggable applications
+I think, that **urls.py not need** for us. We can design urls automatically with 
+
+
+Project diagrams
+--------
 
 ![Project diagram](https://raw.github.com/1st/webpages/master/rapidpy_framework_diagram.png "Project diagram")
