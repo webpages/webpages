@@ -12,19 +12,21 @@ Foreword
 I was thinking about how to teach my nephew to create web applications. The boy were 14 years old, and his hasn't experience in programming yet.
 
 My goal was to tell about how to write web applications on python. But I was found that I need to tell a lot of basic information about:
- - *hirst of all* - help to install Ubuntu Linux to his PC
- - *basic concepts of python* language (this is not hard)
- - *what is django* and how to create new empty project
- - how to *change setings.py and run project*
-  - what is *regular expressions* (to build urls.py)
-  - how to *enable admin app* and show admin site
- - how to *create new app*
-  - describe *models*
-  - design *urls.py*
-  - add new app to *INSTALLED_APPS* in settings.py
-  - create new controller in *views.py*
-  - create required *templates*
- - what is *html, css, java srcipt*
+ - *hirst of all* help to install **Ubuntu Linux** to his PC
+ - basics
+  - what is **python** language (this is not hard)
+  - what is **django** and how to create new empty project
+  - what is **html, css, java srcipt**
+ - how to **run project**
+  - how to change **setings.py**
+  - what is **regular expressions** (to build urls.py)
+  - how to enable admin app and show admin site
+ - how to **create new app**
+  - describe **models**
+  - design **urls.py**
+  - add new app to **INSTALLED_APPS** in settings.py
+  - create new controller in **views.py**
+  - create required **templates**
 
 
 Idea
