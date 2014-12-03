@@ -1,9 +1,6 @@
 WebPages - python web framework
 =======
 
-Intro
---------
-
 Hello.
 
 This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
@@ -17,9 +14,11 @@ This project is based on good ideas from **Ruby on Rails** and **Django** web fr
  * automatic routers. We don't need to control the urls that we use and pay attention to use unique naming without overlaping between multiple urls. Each app has own prefix `app_name/controller_name/...` to handle user requests
  * all data come to database only via forms (like in **Django**)
  * user-defined middleare classes are supported
- * ORM is must have. But with simplified syntax like this `User.first` or `User.all.filter((F.name='Anton' and F.age.in(10, 20, 30)) or F.groups.name='Admins')`
+ * [ORM](https://github.com/webpages/orm) *(it's our separate project)* is must have. But with simplified syntax like this `User.first` or `User.all.filter((F.name='Tony' and F.age.in(10, 20, 30)) or F.roles.name='admins')`
  * templates syntax is very similar to python, without closing tags (styled with indentation, like in **Slim for Ruby**)
 
+
+*****
 
 My old visiton *(see below)*
 --------
