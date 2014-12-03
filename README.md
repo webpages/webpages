@@ -6,7 +6,7 @@ Hello.
 This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
 
 **Key decisions:**
- * project consist of resubable applications *(like in Django)*
+ * project consist of reusable applications *(like in Django)*
  * project has own settings file, and each application has own settings file. We can redefine applicaion-specific settings in project settings file. Settings file contains grouped configuraions per each application (instead global names, like it is in **Django**
  * project should be generated from command-line
  * each application should be generated from command-line. To add data model - we also use command-line. It will create appropriate data models, forms, controllers and templates for this new data model (like in **Ruby on Rails**)
