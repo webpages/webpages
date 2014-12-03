@@ -1,0 +1,14 @@
+project:
+  orm:
+    user: db_user
+    password: *****
+    db_name: blog
+  files:
+    static_dir: static
+    upload_dir: static/upload
+  timezone: UTC
+  language: en
+
+# blog app settings
+blog:
+  add_comments: no
