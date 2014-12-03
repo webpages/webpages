@@ -1,13 +1,17 @@
-WebPages - incredibly ***new*** python web framework
+WebPages - python web framework
 =======
 
 ***
-*I think, that most of web frameworks was inspired by Ruby on Rails approach. I like RoR, Django, Cake PHP - these are good projects. But I have a new idea how to do web programming more easy.*
+*The most of web frameworks was inspired by Ruby on Rails approach. I like RoR, Django, Cake PHP - these are good projects. But I have a new idea how to do web programming more friendly.*
 ***
 
 
-Foreword
+My old visiton *(see below)*
 --------
+
+Below is my original visiton of this project. Above - is my new vision of this web framework.
+
+### Foreword
 
 I was thinking about how to teach my nephew to create web applications. The boy were 14 years old, and his hasn't experience in programming yet.
 
@@ -29,8 +33,7 @@ My goal was to tell about how to write web applications on python. But I was fou
   - create required **templates**
 
 
-Idea
---------
+### Idea
 
 I think, that **urls.py not need** for us. We can design urls automatically internally, based on defined Pages.
 
@@ -53,8 +56,7 @@ Page can be build from parts. This parts are standart set of classes, designed t
  - show comments/ratings to something
 
 
-Project diagrams
---------
+### Project diagrams
 
 *(this is old diagram for my old idea, and I will delete this soon)*
 
