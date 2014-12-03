@@ -1,9 +1,24 @@
 WebPages - python web framework
 =======
 
-***
-*The most of web frameworks was inspired by Ruby on Rails approach. I like RoR, Django, Cake PHP - these are good projects. But I have a new idea how to do web programming more friendly.*
-***
+Intro
+--------
+
+Hello.
+
+This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
+
+**Key decisions:**
+ * project consist of resubable applications *(like in Django)*
+ * project has own settings file, and each application has own settings file. We can redefine applicaion-specific settings in project settings file. Settings file contains grouped configuraions per each application (instead global names, like it is in **Django**
+ * project should be generated from command-line
+ * each application should be generated from command-line. To add data model - we also use command-line. It will create appropriate data models, forms, controllers and templates for this new data model (like in **Ruby on Rails**)
+ * data model migration is easy. When we rename field or add new - we do it in command-line and it save our changes to migration file
+ * automatic routers. We don't need to control the urls that we use and pay attention to use unique naming without overlaping between multiple urls. Each app has own prefix `app_name/controller_name/...` to handle user requests
+ * all data come to database only via forms (like in **Django**)
+ * user-defined middleare classes are supported
+ * ORM is must have. But with simplified syntax like this `User.first` or `User.all.filter((F.name='Anton' and F.age.in(10, 20, 30)) or F.groups.name='Admins')`
+ * templates syntax is very similar to python, without closing tags (styled with indentation, like in **Slim for Ruby**)
 
 
 My old visiton *(see below)*
