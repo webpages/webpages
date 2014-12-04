@@ -1,9 +1,9 @@
 WebPages - python web framework
-=======
+=====
 
 Hello.
 
-This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
+This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. Also I wish to add asynchronous code execution like in **Tornado** and **Node.js**. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
 
 **Key decisions:**
  * project consist of reusable applications *(like in Django)*
@@ -17,11 +17,14 @@ This project is based on good ideas from **Ruby on Rails** and **Django** web fr
  * [ORM](https://github.com/webpages/orm) *(it's our separate project)* is must have. But with simplified syntax like this `User.first` or `User.all.filter((F.name='Tony' and F.age.in(10, 20, 30)) or F.roles.name='admins')`
  * templates syntax is very similar to python, without closing tags (styled with indentation, like in **Slim for Ruby**)
 
+**System requirements:**
+ * to `return` something from function that contains `yield` keyword - we need to use **Python 3.3**
+
 
 *****
 
 My old visiton *(see below)*
---------
+-----
 
 Below is my original visiton of this project. Above - is my new vision of this web framework.
 
