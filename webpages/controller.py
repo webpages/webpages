@@ -10,7 +10,7 @@ class ProjectController(object):
         return 'Not found'
 
 
-def get_controler(app_name, controller_name):
+def get_controller(app_name, controller_name):
     return None
 
 
@@ -40,7 +40,7 @@ def handle_request(request):
     if not app_name or not controller_name:
         return getattr(ProjectController, 'not_found')(request)
     # 2. run controller's method
-    controller = get_controler(app_name, controller_name)
+    controller = get_controller(app_name, controller_name)
     if hasattr(controller, method_name):
         return getattr(controller, method_name)(request)
     # 3. run controller's not_found method
