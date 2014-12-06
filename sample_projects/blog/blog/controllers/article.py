@@ -23,3 +23,6 @@ class Article(Controller):
 
     def delete(self, request):
         return self.render('article/delete')
+
+    def not_found(self, request):
+        raise Exception('Not found')

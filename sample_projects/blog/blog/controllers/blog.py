@@ -23,3 +23,6 @@ class Blog(Controller):
 
     def delete(self, request):
         return self.render('blog/delete')
+
+    def not_found(self, request):
+        raise Exception('Not found')

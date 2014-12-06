@@ -8,6 +8,11 @@ project:
     upload_dir: static/upload
   timezone: UTC
   language: en
+  homepage: blog.blog.index
+  middlewares:
+  - webpages.core.middleware.Cookie
+  - webpages.core.middleware.Session
+  - webpages.user.middleware.User
 
 # blog app settings
 blog:
