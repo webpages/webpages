@@ -1,5 +1,5 @@
 project:
-  orm:
+  database:
     user: db_user
     password: *****
     db_name: blog
