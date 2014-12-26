@@ -27,7 +27,7 @@ This project is based on good ideas from **Ruby on Rails** and **Django** web fr
 - [ ] Run web server on top of webOb or similar
 - [ ] Describe plans splitted by milestones in issues
 
-**Follow us on [facebook](https://www.facebook.com/groups/WebPagesFramework/)**
+**Follow us on [facebook](https://www.facebook.com/WebPagesFramework)**
 
 *****
 
