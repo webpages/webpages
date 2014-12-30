@@ -1,6 +1,27 @@
 from .core import Settings
 
 
+class Request(object):
+    """
+    Represent user request data.
+    """
+
+    def is_ajax(self):
+        return False
+
+
+class Controller(object):
+    """
+    Base controller.
+    """
+
+    def send_mail(self, address, title, message):
+        """
+        Send email to specified address.
+        """
+        pass
+
+
 class ProjectController(object):
 
     def not_found(self, request):
@@ -21,7 +42,7 @@ def handle_request(request):
     requested_url = request.url
 
     # show static content (for empy path or None we don't handle static)
-    static_dir = Settings.get('project:files:static_dir')
+    static_dir = Settings.get('project:files:static_dir', 'static')
     if static_dir and requested_url.startswith(static_dir + '/'):
         return "content of static file: {}".format(requested_url)
 
