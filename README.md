@@ -1,5 +1,5 @@
 WebPages - python web framework
-=====
+===
 
 Hello.
 
@@ -20,6 +20,14 @@ This project is based on good ideas from **Ruby on Rails** and **Django** web fr
 **System requirements:**
  * to `return` something from function that contains `yield` keyword - we need to use **Python 3.3**
 
+
+**Todo:**
+
+- [x] Create facebook group to have feedback from developers
+- [ ] Run web server on top of webOb or similar
+- [ ] Describe plans splitted by milestones in issues
+
+**Follow us on [facebook](https://www.facebook.com/WebPagesFramework)**
 
 *****
 
