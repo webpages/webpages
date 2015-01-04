@@ -9,7 +9,7 @@ files:
 
 timezone: UTC
 language: en
-homepage: blog.blog.index
+homepage: blog.index
 
 middlewares:
 - webpages.core.middleware.Cookie
