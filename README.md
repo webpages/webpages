@@ -6,13 +6,13 @@ Hello.
 This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. Also I wish to add asynchronous code execution like in **Tornado** and **Node.js**. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
 
 **Key decisions:**
- * project consist of reusable applications *(like in Django)*
- * project has own settings file, and each application has own settings file. We can redefine applicaion-specific settings in project settings file. Settings file contains grouped configuraions per each application (instead global names, like it is in **Django**
- * project should be generated from command-line
- * each application should be generated from command-line. To add data model - we also use command-line. It will create appropriate data models, forms, controllers and templates for this new data model (like in **Ruby on Rails**)
+ * project contains set of MVC objects *(don't have reusable applications, like in Django)*
+ * project has own settings file and can redefine default settings for models and controllers. Settings file contains grouped configuraions per component (instead of global names, like it's used in **Django**)
+ * project can be generated from command-line
+ * each MVC object can be generated from command-line. To add data model - we use command-line and it will create appropriate data model, controller with actions and templates for this new data model (like in **Ruby on Rails**)
  * data model migration is easy. When we rename field or add new - we do it in command-line and it save our changes to migration file
- * automatic routers. We don't need to control the urls that we use and pay attention to use unique naming without overlaping between multiple urls. Each app has own prefix `app_name/controller_name/...` to handle user requests
- * all data come to database only via forms (like in **Django**)
+ * automatic routers. We don't need to control the urls that we use and pay attention to use unique naming without overlaping between multiple urls. Each controller has own prefix `controller_name/action_name/...` to handle user requests
+ * all data come to database only via forms (like in **Django**, but forms is a part of model)
  * user-defined middleare classes are supported
  * [ORM](https://github.com/webpages/orm) *(it's our separate project)* is must have. But with simplified syntax like this `User.first` or `User.all.filter((F.name='Tony' and F.age.in(10, 20, 30)) or F.roles.name='admins')`
  * templates syntax is very similar to python, without closing tags (styled with indentation, like in **Slim for Ruby**)
