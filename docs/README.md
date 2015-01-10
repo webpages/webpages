@@ -10,4 +10,4 @@ Table of content
 Samples
 ---
 
-You can find sample projects [../samples](here).
+You can find sample projects [here](../samples).
