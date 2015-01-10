@@ -5,7 +5,16 @@ Hello.
 
 This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. Also I wish to add asynchronous code execution like in **Tornado** and **Node.js**. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
 
-**Key decisions:**
+
+Documentation
+---
+
+[Documentation](docs/)
+
+
+Key decisions
+---
+
  * project contains set of MVC objects *(don't have reusable applications, like in Django)*
  * project has own settings file and can redefine default settings for models and controllers. Settings file contains grouped configuraions per component (instead of global names, like it's used in **Django**)
  * project can be generated from command-line
@@ -17,11 +26,14 @@ This project is based on good ideas from **Ruby on Rails** and **Django** web fr
  * [ORM](https://github.com/webpages/orm) *(it's our separate project)* is must have. But with simplified syntax like this `User.first` or `User.all.filter((F.name='Tony' and F.age.in(10, 20, 30)) or F.roles.name='admins')`
  * templates syntax is very similar to python, without closing tags (styled with indentation, like in **Slim for Ruby**)
 
-**System requirements:**
+System requirements
+---
+
  * to `return` something from function that contains `yield` keyword - we need to use **Python 3.3**
 
 
-**Todo:**
+Todo
+---
 
 - [x] Create facebook group to have feedback from developers
 - [ ] Run web server on top of webOb or similar
