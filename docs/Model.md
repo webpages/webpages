@@ -1,4 +1,4 @@
-Models - WebPages framework
+Models in WebPages framework
 ===
 
 Model represents layer between database and python code.

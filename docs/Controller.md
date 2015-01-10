@@ -1,4 +1,4 @@
-Controllers - WebPages framework
+Controllers in WebPages framework
 ===
 
 Controller responsible for business logic of application.
