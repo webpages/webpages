@@ -1,7 +1,7 @@
 Controllers - WebPages framework
 ===
 
-Controller is responsible for business logic of application.
+Controller responsible for business logic of application.
 
 
 Request
