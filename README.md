@@ -9,7 +9,7 @@ This project is based on good ideas from **Ruby on Rails** and **Django** web fr
 Documentation
 ---
 
-[Documentation](docs/)
+Read full project [documentation](docs/). You can help us to improve our docs!
 
 
 Key decisions
