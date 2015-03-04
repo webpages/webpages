@@ -32,12 +32,13 @@ System requirements
  * to `return` something from function that contains `yield` keyword - we need to use **Python 3.3**
 
 
-Todo
+Roadmap
 ---
 
 - [x] Create facebook group to have feedback from developers
 - [ ] Run web server on top of webOb or similar
 - [ ] Describe plans splitted by milestones in issues
+- [ ] Use Django ORM and Django Templates to speed-up development
 
 **Follow us on [facebook](https://www.facebook.com/WebPagesFramework)**
 
