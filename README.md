@@ -21,7 +21,7 @@ Key decisions
  * each MVC object can be generated from command-line. To add data model - we use command-line and it will create appropriate data model, controller with actions and templates for this new data model (like in **Ruby on Rails**)
  * data model migration is easy. When we rename field or add new - we do it in command-line and it save our changes to migration file
  * automatic routers. We don't need to control the urls that we use and pay attention to use unique naming without overlaping between multiple urls. Each controller has own prefix `controller_name/action_name/...` to handle user requests
- * all data come to database only via forms (like in **Django**, but forms is a part of model)
+ * all data come to database only via forms (like in **Django**, but forms is a part of model). It's important, because if we need to prevent save model with some field values, we need to use Forms in Django, and we can save this model without validation without use Form, but use Model instance instead
  * user-defined middleare classes are supported
  * [ORM](https://github.com/webpages/orm) *(it's our separate project)* is must have. But with simplified syntax like this `User.first` or `User.all.filter((F.name='Tony' and F.age.in(10, 20, 30)) or F.roles.name='admins')`
  * templates syntax is very similar to python, without closing tags (styled with indentation, like in **Slim for Ruby**)
