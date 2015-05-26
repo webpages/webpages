@@ -6,8 +6,15 @@ Hello.
 This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. Also I wish to add asynchronous code execution like in **Tornado** and **Node.js**. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
 
 
-Documentation
----
+#### TODO:
+
+- [ ] **[#1. Run web server on top of webOb or Werkzeug](../../issues/1)**
+- [ ] Describe plans splitted by milestones in issues
+- [ ] Use Django ORM and Django Templates to speed-up development
+- [x] ~~Create facebook group to have feedback from developers~~
+
+
+#### Documentation
 
 Read full project [documentation](docs/). You can help us to improve our docs!
 
@@ -32,14 +39,6 @@ System requirements
 
  * to `return` something from function that contains `yield` keyword - we need to use **Python 3.3**
 
-
-TODO
----
-
-- [ ] [#1](../../issues/1) **Run web server on top of webOb or Werkzeug**
-- [ ] Describe plans splitted by milestones in issues
-- [ ] Use Django ORM and Django Templates to speed-up development
-- [x] ~~Create facebook group to have feedback from developers~~
 
 ----
 
