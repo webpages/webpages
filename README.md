@@ -15,7 +15,7 @@ Read full project [documentation](docs/). You can help us to improve our docs!
 Our goals:
 ---
 
- * **automatic routers**. We DON'T have `urls.py` url mapping *(like we do in Django)*. Instead the web framework search controllers and actions based on convention `controller_name/action_name/...` *(`/blog/view/123/` call `view` action of `Blog` controller with `123` argument)*. To disable application - rename it with leading underscore, like this `_blog`
+ * **automatic routers**. We DON'T have `urls.py` url mapping *(like we do in Django)*. Instead the web framework search controllers and actions based on convention `controller_name/action_name/...` *(`/blog/view/123/` call `view` action of `Blog` controller with `123` argument)*. To disable controller or model - rename it with leading underscore, like this `_blog.py`
  * **check broken urls**. We can run command `check urls` to detect broken urls and fix them manually. You don't need to support url mapping to do this extra job
  * we DON't have reusable applications *(like in Django)*. Only root folders `models`, `views` and `controllers` where you place all your code. You don't need to think about *"In what app I should place this new model?"*. Have an idea? - Code it!
  * **settings inheritance**. Project has own settings file and can redefine default settings for models and controllers. Settings file contains grouped configuraions per component *(NO global names like in Django)*
