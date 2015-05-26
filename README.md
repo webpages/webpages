@@ -12,19 +12,20 @@ Documentation
 Read full project [documentation](docs/). You can help us to improve our docs!
 
 
-Key decisions
+Our goals:
 ---
 
- * project contains set of MVC objects *(don't have reusable applications, like in Django)*
- * project has own settings file and can redefine default settings for models and controllers. Settings file contains grouped configuraions per component (instead of global names, like it's used in **Django**)
- * project can be generated from command-line
- * each MVC object can be generated from command-line. To add data model - we use command-line and it will create appropriate data model, controller with actions and templates for this new data model (like in **Ruby on Rails**)
- * data model migration is easy. When we rename field or add new - we do it in command-line and it save our changes to migration file
- * automatic routers. We don't need to control the urls that we use and pay attention to use unique naming without overlaping between multiple urls. Each controller has own prefix `controller_name/action_name/...` to handle user requests
- * all data come to database only via forms (like in **Django**, but forms is a part of model). It's important, because if we need to prevent save model with some field values, we need to use Forms in Django, and we can save this model without validation without use Form, but use Model instance instead
- * user-defined middleare classes are supported
- * [ORM](https://github.com/webpages/orm) *(it's our separate project)* is must have. But with simplified syntax like this `User.first` or `User.all.filter((F.name='Tony' and F.age.in(10, 20, 30)) or F.roles.name='admins')`
- * templates syntax is very similar to python, without closing tags (styled with indentation, like in **Slim for Ruby**)
+ * **automatic routers**. We DON'T have `urls.py` url mapping *(like we do in Django)*. Instead the web framework search controllers and actions based on convention `controller_name/action_name/...` *(`/blog/view/123/` call `view` action of `Blog` controller with `123` argument)*
+ * **check broken urls**. We can run command `check urls` to detect broken urls and fix them manually. You don't need to support url mapping to do this extra job
+ * we DON't have reusable applications *(like in Django)*. Only root folders `models`, `views` and `controllers` where you place all your code. You don't need to think about *"In what app I should place this new model?"*. Have an idea? - Code it!
+ * **settings inheritance**. Project has own settings file and can redefine default settings for models and controllers. Settings file contains grouped configuraions per component *(NO global names like in Django)*
+ * **generate project from command-line**. And each model/view/controller also sould be. To add new model - we use command-line to create appropriate model, view and controller with appropriate actions and templates for this new model (like in **Ruby on Rails**)
+ * **easy migrations**. When we rename field or add new one - we do it in command-line and it save our changes to migration file
+ * **data validation**. All data come to database only via forms (like in **Django**, but forms are part of Model). In total - the Model can return us the From that we requested *(`User.get_registration_from()` or `User.get_edit_profile_form()`)*
+ * **middleware support**. Tou can add own middleware classes to do something before and after execution of each Controller's action
+ * **[ORM](https://github.com/webpages/orm)**. For the first time we can use third-party ORM's *(Django ORM or SQLAlchemy). But we wish to create simplified syntax like this `User.first` or `User.all.filter((F.name='Tony' and F.age.in(10, 20, 30)) or F.roles.name='admins')`
+ **template engine** with python-like syntax, without closing tags *(styled with indentation, like in `Slim` for Ruby)*
+
 
 System requirements
 ---
@@ -36,9 +37,10 @@ Roadmap
 ---
 
 - [x] Create facebook group to have feedback from developers
-- [ ] Run web server on top of webOb or similar
+- [ ] Run web server on top of webOb or Werkzeug
 - [ ] Describe plans splitted by milestones in issues
 - [ ] Use Django ORM and Django Templates to speed-up development
+
 
 **Follow us on [facebook](https://www.facebook.com/WebPagesFramework)**
 
