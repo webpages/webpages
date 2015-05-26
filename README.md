@@ -36,10 +36,10 @@ System requirements
 TODO
 ---
 
-- [x] ~~Create facebook group to have feedback from developers~~
 - [ ] [#1](../../issues/1) **Run web server on top of webOb or Werkzeug**
 - [ ] Describe plans splitted by milestones in issues
 - [ ] Use Django ORM and Django Templates to speed-up development
+- [x] ~~Create facebook group to have feedback from developers~~
 
 ----
 
