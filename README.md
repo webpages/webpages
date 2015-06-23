@@ -19,4 +19,4 @@ Read full project [documentation](https://github.com/webpages/docs). If you know
 Contact us
 ----
 
-Follow us on [facebook](https://www.facebook.com/WebPagesFramework)
+Join to us on [facebook](https://www.facebook.com/WebPagesFramework)
