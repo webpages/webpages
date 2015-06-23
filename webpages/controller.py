@@ -1,4 +1,4 @@
-from .core import Settings
+from .settings import Settings
 
 
 class Request(object):
