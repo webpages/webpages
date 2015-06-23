@@ -8,7 +8,7 @@ This project is based on good ideas from **Ruby on Rails** and **Django** web fr
 
 #### Current tasks and bugs
 
-Find list of tasks and bug reports in our [issues list](issues). Also you can add your bug report or proposition.
+Find list of tasks and bug reports in our [issues list](https://github.com/webpages/webpages/issues). Also you can add your bug report or proposition.
 
 
 #### Documentation
