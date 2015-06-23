@@ -13,6 +13,8 @@ Find list of tasks and bug reports in our [issues list](https://github.com/webpa
 
 #### Documentation
 
+You can start from [introduction](https://github.com/webpages/docs/blob/master/chapters/Intro.md) to understand project goals.
+
 Read full project [documentation](https://github.com/webpages/docs). If you know how to improve our docs - please create pull request with your changes.
 
 
