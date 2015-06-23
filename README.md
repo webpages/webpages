@@ -9,6 +9,8 @@ This project is based on good ideas from **Ruby on Rails** and **Django** web fr
 Quick start
 -----
 
+You can try our sample application as start point.
+
 ```shell
 git clone git@github.com:webpages/examples.git
 cd examples/
@@ -17,6 +19,11 @@ pip install -r requirements.txt
 python main.py
 ```
 
+Or you can add WebPages to your existing project:
+
+```shell
+pip install webpages
+```
 
 Current tasks and bugs
 -----
