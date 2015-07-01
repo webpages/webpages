@@ -36,6 +36,7 @@ Links
 * `project website <https://github.com/webpages/webpages>`_
 * `documentation <https://github.com/webpages/docs>`_
 * `sample applications <https://github.com/webpages/examples>`_
+* `follow us on facebook <https://www.facebook.com/WebPagesFramework>`_
 
 """
 
