@@ -1,5 +1,6 @@
 from wsgiref.simple_server import make_server
 from webob import Request, Response
+from .router import Router
 
 
 class WebPages(object):
@@ -8,8 +9,10 @@ class WebPages(object):
     """
 
     def __init__(self):
-        pass
+        # init the router
+        self._router = Router()
 
     def run(self, host=None, port=None):
-        server = make_server('127.0.0.1', 8080, app)
+        from wsgiref.simple_server import demo_app
+        server = make_server('127.0.0.1', 8000, demo_app)
         server.serve_forever()
