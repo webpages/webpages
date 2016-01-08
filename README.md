@@ -7,6 +7,8 @@ I like the idea to use JavaScript on both sides - `front-end` and `back-end`. Ye
 
 It's why appear this idea - create web framework that uses only `JavaScript`. But also I described a new syntax that can help to write more beautiful and clear code. *(We continue discussing syntax)*
 
+> **Good to know.** Node.js has [ES6 support](https://nodejs.org/en/docs/es6/) and you can use new features, like classes and more.
+
 
 New syntax
 -----
