@@ -1,43 +1,83 @@
-WebPages - python web framework
+WebPages - JS native web framework
 =====
 
-Hello.
+Hello dear web developer!
 
-This project is based on good ideas from **Ruby on Rails** and **Django** web frameworks. Also I wish to add asynchronous code execution like in **Tornado** and **Node.js**. I tried to simplify project structure to make project as easy as it possible. I believe that you find it useful.
+I like the idea to use JavaScript on both `front-end` and `back-end`. Yes, we can use `node.js` and frameworks like `backbone.js` and `express.js`. But JS syntax isn't what I like, especially with spagetti-style callbacks chain.
+
+It's why appear this idea - create web framework that uses only `JavaScript`. But also I described new syntax that can help to write more beautiful and understanble code.
 
 
-Quick start
+New syntax
 -----
 
-You can try our sample application as start point.
+```python
+# syntax mainly derived from Python languuage
 
-```shell
-git clone git@github.com:webpages/examples.git
-cd examples/
-pip install -r requirements.txt
-# run server on 127.0.0.1:8000
-python main.py
+# assign value
+a, b, c = 1, 2, 3
+a = n * 2
+# syntax for lambda functions
+func add(x, y): x + y
+# define functions
+func append(l, val):
+    l.append(val)
+    return true
 ```
 
-Or you can add WebPages to your existing project:
+```python
+# callbacks chain (version 1: not flat)
 
-```shell
-pip install webpages
+func show_posts(request):
+    try User.get(user_id=1) as user:
+        if not user.is_active:
+            raise Exception("Access denied")
+        with Blog.getall(author=user) as posts:
+            blog_posts = posts
+    catch msg, code:
+        raise Exception("User doesn't found")
+    return render('posts.html', {'posts': blog_posts})
+
+# converts to JS code
+# ? ? ?
+```
+
+```python
+# callbacks chain (version 2: flat list)
+
+func show_posts(request):
+    user = User.get(user_id=1)
+    if not user.is_active:
+        raise Exception("Access denied")
+    posts = Blog.getall(author=user)
+    return render('posts.html', {'posts': posts})
+
+# converts to JS code (something like this)
+
+function show_posts(request, response) {
+    wait(function () {
+      user = User.get(user_id=1)
+    }).then(function (next, err) {
+      if (! user.is_active) {
+        throw "Access denied";
+      }
+    }).then(function (next, err) {
+      posts = Blog.getall(author=user);
+    }).then(function (next, err) {
+      return render('posts.html', {'posts': posts});
+    }).then(function (next, err) {
+      response();
+    });
+}
 ```
 
 
-Documentation
------
-
-You can start from [introduction](https://github.com/webpages/docs/blob/master/chapters/Intro.md) to understand project goals.
-
-Read full project [documentation](https://github.com/webpages/docs). If you know how to improve our docs - please create pull request with your changes.
 
 
 Tasks and bugs
 -----
 
-Find list of tasks and bug reports in our [issues list](https://github.com/webpages/webpages/issues). Also you can add your bug report or proposition.
+Find list of tasks and bug reports in our [issues list](/webpages/webpages/issues). Also you can add your bug report or proposition.
 
 
 Contact us
