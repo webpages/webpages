@@ -1,4 +1,4 @@
-WebPages - JS native web framework
+WebPages - full-stack JS web framework
 =====
 
 Hello dear web developer!
