@@ -5,7 +5,7 @@ Hello dear web developer!
 
 I like the idea to use JavaScript on both sides - `front-end` and `back-end`. Yes, we can use `node.js` and frameworks like `backbone.js` and `express.js`. But JS syntax isn't what I like, especially spagetti-style with callbacks chain.
 
-It's why appear this idea - create web framework that uses only `JavaScript`. But also I described a new syntax that can help to write more beautiful and understanble code. *(We continue discussing syntax)*
+It's why appear this idea - create web framework that uses only `JavaScript`. But also I described a new syntax that can help to write more beautiful and clear code. *(We continue discussing syntax)*
 
 
 New syntax
