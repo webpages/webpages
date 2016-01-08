@@ -32,7 +32,7 @@ func show_posts(request):
     try User.get(user_id=1) as user:
         if not user.is_active:
             raise Exception("Access denied")
-        with Blog.getall(author=user) as posts:
+        with BlogPost.getall(author=user) as posts:
             blog_posts = posts
     catch msg, code:
         raise Exception("User doesn't found")
@@ -49,7 +49,7 @@ func show_posts(request):
     user = User.get(user_id=1)
     if not user.is_active:
         raise Exception("Access denied")
-    posts = Blog.getall(author=user)
+    posts = BlogPost.getall(author=user)
     return render('posts.html', {'posts': posts})
 
 # converts to JS code (something like this)
@@ -62,7 +62,7 @@ function show_posts(request, response) {
         throw "Access denied";
       }
     }).then(function (next, err) {
-      posts = Blog.getall(author=user);
+      posts = BlogPost.getall(author=user);
     }).then(function (next, err) {
       return render('posts.html', {'posts': posts});
     }).then(function (next, err) {
