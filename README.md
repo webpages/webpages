@@ -9,6 +9,10 @@ It's why appear this idea - create web framework that uses only `JavaScript`. Bu
 
 > **Good to know.** Node.js has [ES6 support](https://nodejs.org/en/docs/es6/) and you can use new features, like classes and more.
 
+> **Todo:**
+> - [ ] use [promises](https://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/) instead of callbacks
+> - [ ] see on [coffeescript](http://coffeescript.org)
+
 
 New syntax
 -----
